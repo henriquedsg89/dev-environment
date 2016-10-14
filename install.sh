@@ -10,6 +10,9 @@ pip install --upgrade pip
 
 pip install flake8 jedi neovim awscli
 
+# getting tmux themes
+git clone https://github.com/jimeh/tmux-themepack.git ~/.tmux-themepack
+
 # switch to zsh
 chsh -s /bin/zsh
 
