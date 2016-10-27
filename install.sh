@@ -19,13 +19,16 @@ chsh -s /bin/zsh
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# set tmux configurations
-echo 'Setting tmux configuration'
-cp tmux.conf ~/.tmux.conf
-
 # set zsh configurations
 echo 'Setting zshrc configuration'
 cp zshrc ~/.zshrc
+
+# set tmux configurations
+echo 'Setting tmux configuration'
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+cp tmux.conf ~/.tmux.conf
+source ~/.tmux.conf
+
 
 # set vim configuration
 echo 'Setting vim configuration'
